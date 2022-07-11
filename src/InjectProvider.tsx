@@ -21,6 +21,12 @@ export const InjectProvider = ({ children }: IInjectProvider) => {
   };
 
   const uninject = (id: string) => {
+    const injectable = injected.find((i) => i.id === id);
+
+    if (!injectable) {
+      throw new Error(`Injectable with id ${id} does not exist.`);
+    }
+
     setInjected(injected.filter((i) => i.id !== id));
   };
 
