@@ -6,7 +6,8 @@
   "repository": "https://github.com/ryanhaticus/react-node-inject",
   "scripts": {
     "build": "npx tsc",
-    "publish-package": "pnpm version patch && pnpm run build && npx copyfiles ./package.json ./out && cd ./out && pnpm publish"
+    "version-bump": "pnpm version patch",
+    "publish-package": "pnpm run build && npx copyfiles ./package.json ./out && cd ./out && pnpm publish"
   },
   "keywords": [
     "react",
