@@ -1,6 +1,6 @@
 {
   "name": "react-node-inject",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Inject toasts, modals, and more on the fly - all in React!",
   "module": "true",
   "repository": "https://github.com/ryanhaticus/react-node-inject",
