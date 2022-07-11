@@ -1,12 +1,12 @@
 {
   "name": "react-node-inject",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Inject toasts, modals, and more on the fly - all in React!",
   "module": "true",
   "repository": "https://github.com/ryanhaticus/react-node-inject",
   "scripts": {
     "build": "npx tsc",
-    "publish": "pnpm build && cp ./package.json ./out && cd ./out && npm publish"
+    "publish": "pnpm build && npx copyfiles ./package.json ./out && cd ./out && npm publish"
   },
   "keywords": [
     "react",
@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "@types/react": "^18.0.15",
-    "tslib": "^2.4.0"
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.4"
   }
 }
