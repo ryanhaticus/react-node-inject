@@ -11,7 +11,6 @@ description: Inject toasts, modals, and more on the fly - all in React!
 ```bash
 npm install react-node-inject
 pnpm install react-node-inject
-yarn add react-node-inject
 ```
 
 ### Features
