@@ -1,0 +1,9 @@
+# Begone files!
+node_modules/
+.gitbook/
+src/
+.gitignore
+.prettierrc
+LICENSE
+*.md
+tsconfig.json

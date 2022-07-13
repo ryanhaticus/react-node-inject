@@ -1,19 +1,19 @@
 {
   "name": "react-node-inject",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "Inject toasts, modals, and more on the fly - all in React!",
-  "main": "index.js",
+  "main": "out/index.js",
   "repository": "https://github.com/ryanhaticus/react-node-inject",
   "scripts": {
     "build": "npx tsc",
     "version-bump": "pnpm version patch",
-    "publish-package": "pnpm run build && npx copyfiles ./package.json ./out && cd ./out && pnpm publish"
+    "publish-package": "pnpm run build && pnpm publish"
   },
   "keywords": [
     "react",
     "inject"
   ],
-  "typings": "index.d.ts",
+  "typings": "out/index.d.ts",
   "author": "Ryan 'Haticus' Huellen",
   "license": "MIT",
   "dependencies": {
