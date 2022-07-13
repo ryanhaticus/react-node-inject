@@ -1,8 +1,8 @@
 {
   "name": "react-node-inject",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Inject toasts, modals, and more on the fly - all in React!",
-  "module": "true",
+  "main": "index.js",
   "repository": "https://github.com/ryanhaticus/react-node-inject",
   "scripts": {
     "build": "npx tsc",
@@ -13,10 +13,7 @@
     "react",
     "inject"
   ],
-  "typings": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
+  "typings": "index.d.ts",
   "author": "Ryan 'Haticus' Huellen",
   "license": "MIT",
   "dependencies": {
