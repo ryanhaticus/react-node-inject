@@ -13,7 +13,7 @@ export const InjectProvider = ({ children }: IInjectProvider) => {
   const inject = (node: ReactNode, id?: string) => {
     const exists = injected.find((i) => i.id === id);
 
-    if (exists) {
+    if (id && exists) {
       throw new Error(`Injectable with id ${id} already exists.`);
     }
 
