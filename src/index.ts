@@ -1,2 +1,7 @@
-export { useInject } from './InjectContext';
-export { InjectProvider } from './InjectProvider';
+import { useInject } from './InjectContext';
+import { InjectProvider } from './InjectProvider';
+
+module.exports = {
+  useInject,
+  InjectProvider,
+};
