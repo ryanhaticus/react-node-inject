@@ -26,6 +26,6 @@
     "moduleResolution": "node",
     "jsx": "react-jsx",
     "esModuleInterop": true,
-    "outDir": "out/"
+    "outDir": "./dist"
   },
 }

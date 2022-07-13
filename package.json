@@ -2,18 +2,27 @@
   "name": "react-node-inject",
   "version": "1.1.4",
   "description": "Inject toasts, modals, and more on the fly - all in React!",
-  "main": "out/index.js",
   "repository": "https://github.com/ryanhaticus/react-node-inject",
-  "scripts": {
-    "build": "npx tsc",
-    "version-bump": "pnpm version patch",
-    "publish-package": "pnpm run build && pnpm publish"
-  },
   "keywords": [
     "react",
     "inject"
   ],
-  "typings": "out/index.d.ts",
+  "type": "module",
+  "source": "src/index.ts",
+  "exports": {
+    "require": "./dist/index.cjs",
+    "default": "./dist/index.modern.js"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.module.js",
+  "unpkg": "./dist/index.umd.js",
+  "scripts": {
+    "build": "microbundle --jsx React.createElement",
+    "dev": "microbundle watch --jsx React.createElement",
+    "version-bump": "pnpm version patch",
+    "publish-package": "pnpm run build && pnpm publish"
+  },
+  "typings": "./dist/index.d.ts",
   "author": "Ryan 'Haticus' Huellen",
   "license": "MIT",
   "dependencies": {
@@ -22,6 +31,7 @@
   "devDependencies": {
     "@types/node": "^18.0.3",
     "@types/react": "^18.0.15",
+    "microbundle": "^0.15.0",
     "tslib": "^2.4.0",
     "typescript": "^4.7.4"
   }
